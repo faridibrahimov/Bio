@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    min-height: 12vh;
+    flex-grow: 0;
+    flex-shrink: 0;
+    background-color: rgba(32, 32, 32, 0.901);
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.headera {
+    text-decoration: none;
+    color: white;
+    margin-right: 70px;
+}
+
+main {
+    background-color: rgba(32, 32, 32, 1);
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(32, 32, 32, 1);
+}
+
+footer p {
+    color:  white;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: rgba(149, 149, 149, 1);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40%;
+    padding-left: 30px;
+}
+
+.projects {
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 40%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 20%;
+    /* justify-content: right;  */
+}
+
+.bx-wrapper {
+    width: 858px;
+    height: 248px;
+}
+
+.farid_img {
+    width:253px;
+    height: 250px;
+    border-radius: 360px;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+hr {
+    border: 2px solid rgba(149, 149, 149, 1);
+}
+
+.skills-languages {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+  
+.skill,.languages {
+    max-width: 400px; /* Максимальная ширина блока */
+    margin: 20px; /* Центрируем блок */
+    padding: 2%;
+    width: 48%
+}
+  
+.skill-item,.language{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Пространство между текстами и процентами */
+    margin-bottom: 35px; /* Отступ между элементами */
+    color: white;
+}
+  
+.progress {
+    flex-grow: 1;
+    height: 10px; /* Высота полосы прогресса */
+    background-color: #444; /* Цвет фона полосы */
+    border-radius: 5px;
+    margin: 0 10px; /* Отступы по бокам */
+    overflow: hidden;
+}
+  
+.progress-bar {
+    height: 100%;
+    background-color: #f7b52a; /* Цвет заполненной части */
+    border-radius: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(248, 170, 0);
+}
+
+.imgicon {
+    width: 20%;
+    margin-right: 20px;
+}
+
+@media (max-width: 407px) {
+
+    h1 {
+        font-size: 17px;
+        padding-top: 15%;
+    }
+
+    .farid_img {
+        width:144px;
+        height: 141px;
+        border-radius: 360px;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    .bx-wrapper {
+        width: 358px;
+        height: 248px;
+    }
+
+    .slider img {
+        width: 358px;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: center;
+        gap: 40%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        padding-left: 5%;
+    }
+
+    .imgicon {
+        width: 15%;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1423px) and (orientation: landscape){
+
+    h1 {
+        font-size: 17px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .farid_img {
+        width:180px;
+        height: 177px;
+        border-radius: 360px;
+        margin-right: 13%;
+        margin-top: 1%;
+    }
+
+    .bx-wrapper {
+        width: 458px;
+        height: 248px;
+    }
+
+    .slider img {
+        width: 458px;
+    }
+
+    .carousel {
+        display: flex;
+        align-items: center;
+        gap: 40%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        padding-left: 27%;
+    }
+}
